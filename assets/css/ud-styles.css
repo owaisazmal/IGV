@@ -205,7 +205,7 @@ p {
 /* Custom adjustments for navbar items */
 .navbar-nav .nav-item > a {
   padding-left: 0px; /* Adjust if needed */
-  margin-left: 70px; /* Shifts items to the left, adjust value as needed */
+  margin-left: 80px; /* Shifts items to the left, adjust value as needed */
 }
 
 .ud-header {
@@ -790,20 +790,66 @@ p {
 .ud-single-feature .ud-feature-link:hover {
   color: var(--primary-color);
 }
-
-/* ===== About CSS ===== */
+/* Custom About Us Section Styles */
 .ud-about {
   background: #f3f4fe;
   padding: 120px 0;
+}
+
+.ud-about-wrapper {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ud-about-content-wrapper {
+  max-width: 500px; /* Adjust width as necessary */
+  padding: 20px;
+  margin-bottom: 30px; /* Space between text and image */
+  background: var(--white); /* Using existing color variable for consistency */
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: adds subtle shadow */
+}
+
+.ud-about-content {
+  margin-bottom: 20px;
+}
+
+.ud-about-image {
+  width: 80%; /* Adjust size as necessary */
+  margin: 0 auto; /* Centers the image horizontally */
+}
+
+.ud-about-image img {
+  width: 100%;
+  height: auto; /* Keeps the image aspect ratio */
 }
 
 @media (max-width: 767px) {
   .ud-about {
     padding: 80px 0;
   }
+
+  .ud-about-content-wrapper,
+  .ud-about-image {
+    width: 90%; /* More width on smaller screens */
+  }
 }
 
-.ud-about-wrapper {
+/* ===== About CSS ===== */
+.ud-about1 {
+  background: #f3f4fe;
+  padding: 120px 0;
+}
+
+@media (max-width: 767px) {
+  .ud-about1 {
+    padding: 80px 0;
+  }
+}
+
+.ud-about1-wrapper {
   background: var(--white);
   border: 1px solid rgba(0, 0, 0, 0.08);
   display: -webkit-box;
@@ -815,32 +861,32 @@ p {
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
-  .ud-about-wrapper {
+  .ud-about1-wrapper {
     display: block;
   }
 }
 
-.ud-about-content-wrapper {
+.ud-about1-content-wrapper {
   padding: 70px;
 }
 
 @media (max-width: 767px) {
-  .ud-about-content-wrapper {
+  .ud-about1-content-wrapper {
     padding: 50px 30px;
   }
 }
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
-  .ud-about-content-wrapper {
+  .ud-about1-content-wrapper {
     padding: 50px;
   }
 }
 
-.ud-about-content {
+.ud-about1-content {
   max-width: 500px;
 }
 
-.ud-about-content .tag {
+.ud-about1-content .tag {
   font-weight: 500;
   font-size: 14px;
   color: var(--white);
@@ -850,7 +896,7 @@ p {
   margin-bottom: 20px;
 }
 
-.ud-about-content h2 {
+.ud-about1-content h2 {
   font-weight: bold;
   font-size: 36px;
   line-height: 45px;
@@ -858,22 +904,33 @@ p {
 }
 
 @media (max-width: 767px) {
-  .ud-about-content h2 {
+  .ud-about1-content h2 {
     font-size: 26px;
     line-height: 38px;
   }
 }
 
-.ud-about-content p {
+.ud-about1-content p {
   font-size: 16px;
   line-height: 28px;
   margin-bottom: 40px;
 }
 
-.ud-about-content .ud-main-btn:hover {
+.ud-about1-content .ud-main-btn:hover {
   background: #2748b4;
   -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
           box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+/* about us heading */
+.tag {
+  font-size: 28px; /* Increase the font size */
+  font-weight: bold; /* Make the font weight bold */
+  color: var(--primary-color); /* Use the primary color variable, adjust if necessary */
+  padding: 5px 20px; /* Maintain padding or adjust as needed */
+  background-color: var(--white); /* Optional: Change the background color if needed */
+  display: inline-block; /* Ensures the styling applies correctly */
+  margin-bottom: 20px; /* Space below the tag */
+  border-radius: 5px; /* Optional: Adds rounded corners to the background */
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
