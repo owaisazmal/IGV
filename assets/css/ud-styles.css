@@ -202,6 +202,12 @@ p {
 }
 
 /* ===== Header CSS ===== */
+/* Custom adjustments for navbar items */
+.navbar-nav .nav-item > a {
+  padding-left: 0px; /* Adjust if needed */
+  margin-left: 70px; /* Shifts items to the left, adjust value as needed */
+}
+
 .ud-header {
   position: absolute;
   top: 0;
@@ -234,10 +240,12 @@ p {
   position: relative;
   -webkit-transition: all 0.3s ease-out 0s;
   transition: all 0.3s ease-out 0s;
+  display: flex;
+  align-items: center;
 }
 
 .navbar-brand {
-  padding: 0;
+  margin-right: auto;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
